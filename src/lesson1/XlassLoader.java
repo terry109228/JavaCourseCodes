@@ -18,11 +18,13 @@ public class XlassLoader extends ClassLoader {
         Class<?> clazz = classLoader.loadClass(className);
         // 看看里面有些什么方法
         for (Method m : clazz.getDeclaredMethods()) {
-            System.out.println(clazz.getSimpleName() + "." + m.getName());
+        	System.out.println("类名："+clazz.getSimpleName());
+        	System.out.println("方法名："+m.getName());
         }
         // 创建对象
         Object instance = clazz.getDeclaredConstructor().newInstance();
         // 调用实例方法
+        System.out.println("开始执行方法："+methodName);
         Method method = clazz.getMethod(methodName);
         method.invoke(instance);
     }

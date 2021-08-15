@@ -16,7 +16,9 @@ public class OKHttpRequestClient {
 	public static void main(String[] args) {
 		OKHttpRequestClient client = new OKHttpRequestClient();
 		try {
-			client.run("http://localhost:8801");
+			String response = client.run("http://localhost:8801");
+			System.out.println("∑√Œ ∑µªÿ£∫");
+			System.out.println(response);
 		} catch (IOException e) {
 			logger.error(e);
 		}

@@ -15,7 +15,7 @@ public class HelloUrlFilter implements HttpRequestFilter{
 	        String uri = fullRequest.uri();
 	        System.out.println(" HelloUrlFilter接收到的请求,url: " + uri);
 	        if (uri.startsWith("/hello")) {
-	            // �Ź�
+	        	System.out.println("符合要求，通过: " + uri);
 	        } else {
 	            throw new RuntimeException("不符合URL过滤条件" + uri);
 	        }

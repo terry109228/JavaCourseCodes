@@ -1,2 +1,5 @@
 eclipse.preferences.version=1
 encoding//src/lesson2/GC\u603B\u7ED3.md=UTF-8
+encoding//src/lesson3/main/java/io/github/kimmking/gateway/NettyServerApplication.java=UTF-8
+encoding//src/lesson3/main/java/io/github/kimmking/gateway/inbound/HttpInboundHandler.java=UTF-8
+encoding/<project>=UTF-8
